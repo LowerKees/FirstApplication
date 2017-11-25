@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="FirstApplication.About" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <h2> Over deze website.</h2>
+    <h3>Achtergrond over het project en handige links.</h3>
+    <p>Deze webpagina is een ASP.NET application en maakt gebruik van een Sql Server database.</p>
+    <p>De source code is beschikbaar op <a href="">Git Hub</a>.</p>
 </asp:Content>
