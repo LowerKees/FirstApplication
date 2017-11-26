@@ -17,5 +17,15 @@ namespace FirstApplication
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        protected void Application_BeginRequest(object sender, EventArgs e)
+        {
+            string userIp = getUserIP();
+        }
+
+        private string getUserIP()
+        {
+            return Request.UserHostAddress;
+        }
     }
 }
